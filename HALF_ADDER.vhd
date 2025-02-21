@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY HALF_ADDER IS
+	Port(
+	A,B : IN std_logic;
+	S,C : OUT std_logic
+	);
+	
+END HALF_ADDER;
+
+ARCHITECTURE BEHAVIOR OF HALF_ADDER IS
+BEGIN
+	S <= A XOR B;
+	C <= A AND B;
+END BEHAVIOR;
